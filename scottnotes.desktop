@@ -1,0 +1,12 @@
+[Desktop Entry]
+#put this file in /usr/share/applications
+Version=1.0
+Encoding=UTF-8
+Name=Scott Notes
+Comment=Remeber What I'm suppose to be Doing Today
+Exec=python3 /home/firefly/Projects/Software/ScottNotes/ScottNotes.py
+Icon=/home/firefly/Projects/Software/ScottNotes/icon.png
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GNOME;GTK;Utility;

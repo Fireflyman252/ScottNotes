@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>NoteWidget</class>
+ <widget class="QWidget" name="NoteWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>560</width>
+    <height>330</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QWidget" name="widget_2" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="addPushButton">
+        <property name="text">
+         <string>Add</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="addLineEdit"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>addPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>NoteWidget</receiver>
+   <slot>addPushButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>58</x>
+     <y>182</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>4</x>
+     <y>279</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>addLineEdit</sender>
+   <signal>returnPressed()</signal>
+   <receiver>NoteWidget</receiver>
+   <slot>addLineEditReturnPressed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>518</x>
+     <y>182</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>556</x>
+     <y>279</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>addPushButtonClicked()</slot>
+  <slot>addLineEditReturnPressed()</slot>
+  <slot>tableClickEvent(QModelIndex)</slot>
+ </slots>
+</ui>
